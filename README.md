@@ -2,12 +2,16 @@
 Versiona a consolidação dos lançamento de fluxo de caixa.
 
 # Antes de rodar o projeto é necessario a infra instalada ou rode direto na AWS.
+Para verificar a infra clique [aqui](https://github.com/romymoura/fluxo-de-caixa-infra)
+
  ![Descrição da imagem](.content/estrutura-infra.png)
  
- Para verificar a infra clique [aqui](https://github.com/romymoura/fluxo-de-caixa-infra)
+ 
 
-Veremos abaixo o que foi utilizado.
-	* .Net 8 com C#, API Rest Full, 
+
+### Veremos abaixo o que foi utilizado.
+
+* .Net 8 com C#, API Rest Full, 
 	Worker					-> Para consumir as mensagens geradas pela API
 	SQS						-> Contém a mensagem contendo o lançamento de (Débito ou Crédito)
 	S3						-> Para Receber o arquivo de consolidação dos valores do caixa.
@@ -43,3 +47,5 @@ Veremos abaixo o que foi utilizado.
 
 # Serviço de lançamento (Débito e Crédito)
  Este serviço é a porta de entrada, são os laçamentos da caixa registradora, para validar clique [aqui](https://github.com/romymoura/fluxo-de-caixa-lancamento)
+
+  ![Descrição da imagem](.content/servico-lacamento.png)
