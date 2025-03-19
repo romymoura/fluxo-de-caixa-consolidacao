@@ -2,7 +2,8 @@
 Versiona a consolidação dos lançamento de fluxo de caixa.
 
 # Antes de rodar o projeto é necessario a infra instalada ou rode direto na AWS.
- ![Descrição da imagem](../.content/estrutura-infra.png)
+ ![Descrição da imagem](.content/estrutura-infra.png)
+ 
  Para verificar a infra clique [aqui](https://github.com/romymoura/fluxo-de-caixa-infra)
 
 Veremos abaixo o que foi utilizado.
