@@ -11,13 +11,14 @@ Para verificar a infra clique [aqui](https://github.com/romymoura/fluxo-de-caixa
 
 ### Veremos abaixo o que foi utilizado.
 
+<pre>
 * .Net 8 com C#, API Rest Full, 
-	Worker					-> Para consumir as mensagens geradas pela API
-	SQS						-> Contém a mensagem contendo o lançamento de (Débito ou Crédito)
-	S3						-> Para Receber o arquivo de consolidação dos valores do caixa.
-	AutoMapper				-> Para o suporte de transacionar informações entres as camadas 
-	Fluent Validation		-> Adicionado com a intenção de validar entrada e saídas de dados (Instrumentado) 
-	Serilog					-> Para dossa observabilidade
+	Worker			-> Para consumir as mensagens geradas pela API
+	SQS			-> Contém a mensagem contendo o lançamento de (Débito ou Crédito)
+	S3			-> Para Receber o arquivo de consolidação dos valores do caixa.
+	AutoMapper		-> Para o suporte de transacionar informações entres as camadas 
+	Fluent Validation	-> Adicionado com a intenção de validar entrada e saídas de dados (Instrumentado) 
+	Serilog			-> Para dossa observabilidade
 * TDD
 	Adicionado uma pequeno exemplar de cobetura de codigo gerando o dash para melhor visualização de cobertura.
 
@@ -43,7 +44,7 @@ Para verificar a infra clique [aqui](https://github.com/romymoura/fluxo-de-caixa
 	D -> Dependency Inversion Principle (Princípio da Inversão de Dependência) A injeção de dependencia ajuda
 	seguir este princípio, pois nenhuma service depende de uma repository.
 
-
+</pre>
 
 # Serviço de lançamento (Débito e Crédito)
  Este serviço é a porta de entrada, são os laçamentos da caixa registradora, para validar clique [aqui](https://github.com/romymoura/fluxo-de-caixa-lancamento)
